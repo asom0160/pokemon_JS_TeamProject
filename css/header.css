@@ -1,0 +1,269 @@
+header {
+  height: 120px;
+  background-color: white;
+
+  /* color: var(--white); */
+  z-index: 1;
+
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.3);
+}
+nav {
+  /* max-width: var(--max-width); */
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.burger {
+  display: none;
+}
+h1 {
+  max-width: 240px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  max-width: 1320px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 0 15px;
+
+  /* background-color: aqua; */
+}
+.gnb {
+  height: 100%;
+  margin: auto 0;
+
+  display: flex;
+  /* gap: 10px; */
+  align-items: center;
+}
+.menu_box {
+  height: 100%;
+  width: 170px;
+  /* display: flex;
+  gap: 10px; */
+  align-items: center;
+  margin: auto 0;
+  transition: 0.5s;
+}
+.menu_box_element {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  font-size: 16px;
+  border: 0.5px solid #dedede;
+}
+.menu_box_element > i {
+  font-size: 25px;
+  color: #dedede;
+  /* transition: 0.5s;
+  transform: translateX(-50%); */
+}
+
+.acc {
+  /* height: 100%;
+  width: 100%;
+  max-width: 240px;
+  margin: auto 0;
+
+  display: flex;
+  align-items: center; */
+  height: 100%;
+  margin: auto 0;
+
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.acc_box {
+  height: 100%;
+  /* width: 170px; */
+}
+.acc_box_element {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  font-size: 15px;
+}
+.acc_box_element > i {
+  font-size: 35px;
+  /* color: #dedede; */
+  /* transition: 0.5s;
+  transform: translateX(-50%); */
+}
+
+.news {
+  .menu_box_element > i {
+    color: #fffbf7;
+  }
+  background-color: #ffb040;
+  color: #fffbf7;
+}
+
+.game:hover {
+  .menu_box_element > i {
+    color: #fffbf7;
+  }
+  background-color: #d63936;
+  color: #fffbf7;
+  transition: all 0.3s;
+}
+
+.gameCard:hover {
+  .menu_box_element > i {
+    color: #fffbf7;
+  }
+  background-color: #1955a0;
+  color: #fffbf7;
+  transition: all 0.3s;
+}
+
+.animation:hover {
+  .menu_box_element > i {
+    color: #fffbf7;
+  }
+  background-color: #264463;
+  color: #fffbf7;
+  transition: all 0.3s;
+}
+
+.gift:hover {
+  .menu_box_element > i {
+    color: #fffbf7;
+  }
+  background-color: #793da7;
+  color: #fffbf7;
+  transition: all 0.3s;
+}
+
+.store {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffde02;
+  font-weight: 700;
+  margin-left: 45px;
+  width: 10%;
+}
+.store > img {
+  width: 80%;
+}
+
+@media screen and (max-width: 1540px) {
+  h1 {
+    max-width: 180px;
+    width: 100%;
+  }
+  .container {
+    max-width: 1169px;
+    margin: 0 15px;
+  }
+  .menu_box {
+    height: 100%;
+    width: 119px;
+
+    align-items: center;
+    margin: auto 0;
+  }
+  .store {
+    width: 12%;
+    margin-left: 15px;
+  }
+  .store > img {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  h1 {
+    max-width: 125px;
+    width: 100%;
+  }
+
+  .container {
+    max-width: 1169px;
+    margin: 0 15px;
+  }
+  .menu_box {
+    height: 100%;
+    width: 94px;
+
+    align-items: center;
+    margin: auto 0;
+  }
+
+  h1 > a > img {
+    width: 87%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  header {
+    height: 65px;
+  }
+  .burger {
+    background-color: black;
+    color: white;
+    height: 65px;
+    width: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+  }
+  .container {
+    justify-content: flex-end;
+    max-width: fit-content;
+    /* padding: 0; */
+    margin: 0;
+  }
+  .d-none {
+    display: none;
+  }
+  .acc {
+    max-width: fit-content;
+  }
+}

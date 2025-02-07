@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포켓몬 공식 사이트</title>
+    <link rel="icon" href="./img/PokeBall_icon.png" />
+    <link rel="stylesheet" href="./common/reset.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/find.css" />
+    <link rel="stylesheet" href="./css/subbar.css" />
+    <link rel="stylesheet" href="./css/category.css" />
+    <link rel="stylesheet" href="./css/cardbox.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <script type="module" src="./Javscript/index.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="burger">
+          <li><i class="fa-solid fa-bars"></i></li>
+        </ul>
+        <h1>
+          <a href="https://pokemonkorea.co.kr/">
+            <img src="https://pokemonkorea.co.kr/img/main_logo.png" alt="" />
+          </a>
+        </h1>
+        <div class="container">
+          <ul class="gnb d-none">
+            <li class="news menu_box">
+              <a class="menu_box_element" href="/main.html">
+                <i class="fa-solid fa-newspaper"></i>소식
+              </a>
+            </li>
+            <li class="game menu_box">
+              <a
+                class="menu_box_element"
+                href="https://pokemonkorea.co.kr/game"
+              >
+                <i class="fa-solid fa-gamepad"></i>게임
+              </a>
+            </li>
+            <li class="gameCard menu_box">
+              <a class="menu_box_element" href="https://pokemoncard.co.kr/main">
+                <i class="fa-solid fa-dice"></i>카드게임
+              </a>
+            </li>
+            <li class="animation menu_box">
+              <a
+                class="menu_box_element"
+                href="https://pokemonkorea.co.kr/animation"
+              >
+                <i class="fa-brands fa-youtube"></i>애니메이션
+              </a>
+            </li>
+            <li class="gift menu_box">
+              <a
+                class="menu_box_element"
+                href="https://pokemonkorea.co.kr/goods"
+              >
+                <i class="fa-solid fa-gift"></i>상품
+              </a>
+            </li>
+          </ul>
+
+          <ul class="acc">
+            <li class="acc_box d-none">
+              <a
+                class="acc_box_element"
+                href="https://pokemonkorea.co.kr/pokedex"
+                class="dictionary"
+              >
+                <i class="fa-solid fa-book"></i>
+                포켓몬 도감
+              </a>
+            </li>
+            <li class="acc_box">
+              <a
+                class="acc_box_element"
+                href="https://pokemonkorea.co.kr/member/login?next=/pokedex"
+                class="login"
+              >
+                <i class="fa-solid fa-circle-user"></i>
+                <div class="d-none">로그인</div>
+              </a>
+            </li>
+            <li class="acc_box">
+              <div class="acc_box_element">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="d-none">통합검색</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <a href="https://www.pokemonstore.co.kr/" class="store d-none">
+          <img src="./img/image 16.png" alt="" />
+        </a>
+      </nav>
+    </header>
+
+    <main class="wrapper">
+      <section class="visual">
+        <div class="find_dox">
+          <h3>소식</h3>
+          <input
+            style="padding-left: 30px; font-size: 20px; font-weight: 700"
+            type="text"
+            placeholder="검색어를 입력해주시던가 말던가"
+          />
+        </div>
+      </section>
+
+      <section class="breadcrumb">
+        <ul class="subbar_tag">
+          <li>
+            <img src="https://pokemonkorea.co.kr/img/main_logo.png" alt="" />
+          </li>
+          <li class="tag">></li>
+          <li><a class="tag" href="/main.html">소식</a></li>
+        </ul>
+      </section>
+      <section class="category">
+        <div class="category_list">
+          <ul>
+            <li><button id="all">전체</button></li>
+            <li><button id="news">공지</button></li>
+            <li><button id="event">이벤트</button></li>
+            <li><button id="game">게임</button></li>
+            <li><button id="cardgame">카드 게임</button></li>
+            <li><button id="movie">애니 & 영화</button></li>
+            <li><button id="goods">상품</button></li>
+          </ul>
+
+          <select id="category">
+            <option value="전체" selected>전체</option>
+            <option value="공지">공지</option>
+            <option value="게임">게임</option>
+            <option value="카드 게임">카드게임</option>
+            <option value="애니 & 영화">애니</option>
+            <option value="상품">상품</option>
+          </select>
+        </div>
+      </section>
+
+      <section id="cardbox">
+        <!-- 카드 나오는 곳 -->
+      </section>
+      <section>
+        <div id="moreBtn">
+          <p>더보기 <br /><i class="fa-solid fa-chevron-down"></i></p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-top">
+        <div class="footer-container top-list-heght">
+          <h3>pokemon korea, inc.</h3>
+          <ul class="footer-top-list">
+            <li>회사소개</li>
+            <li class="bar">사업내용</li>
+            <li class="bar">제휴안내</li>
+            <li class="bar">이용약관</li>
+            <li class="bar">개인정보처리방침</li>
+            <li class="bar">이메일무단수집거부</li>
+            <li class="bar">고객센터</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-mdl">
+        <div class="footer-container">
+          <span class="add">
+            <div>(주)포켓몬코리아 경기도 용인시 수지구 신수로 801, 4층</div>
+            <div class="add_list">
+              <span> 대표이사:임재범</span>
+              <span>개인정보관리책임자:임재범</span>
+              <span> 사업자등록번호:113-86-07676</span>
+            </div>
+          </span>
+          <span>
+            <ul class="icon_grop">
+              <li class="icon">
+                <a
+                  href="https://www.instagram.com/pokemon_korea_official?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+                >
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/800px-Instagram_logo_2022.svg.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="icon">
+                <a href="https://www.youtube.com/user/PokemonKoreaInc">
+                  <img
+                    src="https://cdn-icons-png.freepik.com/256/3983/3983847.png?semt=ais_hybrid"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="icon">
+                <a href="https://x.com/PokemonKoreaInc">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/3938/3938028.png"
+                    alt=""
+                /></a>
+              </li>
+              <li class="icon">
+                <a href="https://www.tiktok.com/@pokemon_kor"
+                  ><img
+                    src="https://www.dailypop.kr/news/photo/201902/37741_66303_22.jpg"
+                    alt=""
+                /></a>
+              </li>
+              <li class="icon">
+                <a href="https://www.pokemonstore.co.kr/"
+                  ><img
+                    src="https://pokemonkorea.co.kr/img/icon/icon_poke.png"
+                    alt=""
+                /></a>
+              </li>
+            </ul>
+          </span>
+        </div>
+      </div>
+      <div class="footer-btm">
+        <div class="footer-container">
+          <div class="customer">
+            <div class="customer_group">
+              <div class="customer_title">고객센터</div>
+              <div class="customer_explanation">
+                <div>운영시간 : 평일 15시 ~ 18시</div>
+                <div class="mag_25">031-272-0108</div>
+                <div class="mag_25">
+                  카드 게임 및 카드 게임 이벤트 : 1588-4273
+                </div>
+                <div class="mag_25">webmaster@pokemonkorea.co.kr</div>
+              </div>
+            </div>
+            <div class="caution">
+              ※당사에서는 Pokémon GO 관련 문의는 대응하지 않습니다.
+            </div>
+          </div>
+
+          <div class="footer_explanation">
+            <div>
+              <div class="mag_10">
+                ©2025 Pokémon. ©1995-2025 Nintendo/Creatures Inc./GAME FREAK
+                inc.
+              </div>
+              <div class="mag_10">
+                ©Nintendo, Creatures, GAME FREAK, TV Tokyo, ShoPro, JR Kikaku.
+                ©Pokémon. ©1998-2020 PIKACHU PROJECT.
+              </div>
+              <div class="mag_10">
+                포켓몬스터, 포켓몬, Pokémon, 몬스터볼, Nintendo Switch, Nintendo
+                3DS, Nintendo DS는 Nintendo의 상표입니다.
+              </div>
+            </div>
+            <div>
+              본 사이트의 콘텐츠에 대한 무단 복제 및 도용을 금하며 이를 어길 시
+              법적 조치를 받을 수 있습니다.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
